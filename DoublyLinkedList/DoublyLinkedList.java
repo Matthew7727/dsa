@@ -46,8 +46,8 @@ public class DoublyLinkedList {
             tail = tail.prev;
             tail.next = null;
             temp.prev = null;
-            length--;
         }
+        length--;
         return temp;
     }
 
@@ -81,8 +81,7 @@ public class DoublyLinkedList {
     }
 
     public Node get(int index) {
-        if (index < 0 || index >= length)
-            return null;
+        if (index < 0 || index >= length) return null;
         Node temp = head;
         if (index < (length / 2)) {
             for (int i = 0; i < index; i++) {
@@ -90,7 +89,7 @@ public class DoublyLinkedList {
             }
         } else {
             temp = tail;
-            for (int i = length - 1; i > 0; i--) {
+            for (int i = length - 1; i > index; i--) {
                 temp = temp.prev;
             }
         }
@@ -136,7 +135,7 @@ public class DoublyLinkedList {
         if (index == length -1 ) return removeLast();
 
         Node temp = get(index);
-        
+
         temp.next.prev = temp.prev;
         temp.prev.next = temp.next;
 
