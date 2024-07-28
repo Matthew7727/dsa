@@ -1,6 +1,6 @@
 package LinkedList.LEETCODE.C;
 
-public class Main {
+public class Main3 {
 
     public static void main(String[] args) {
         LinkedList3 myLinkedList = new LinkedList3(1);

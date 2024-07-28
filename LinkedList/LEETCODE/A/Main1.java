@@ -1,6 +1,6 @@
 package LinkedList.LEETCODE.A;
 
-public class Main {
+public class Main1 {
 
     public static void main(String[] args) {
 
