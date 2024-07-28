@@ -95,6 +95,8 @@ public class DoublyLinkedListB {
         return temp;
     }
 
+    // Answer
+
     public void reverse() {
         Node current = head;
         Node temp = null;
