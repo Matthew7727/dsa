@@ -1,12 +1,28 @@
 
 import DoublyLinkedList.DoublyLinkedList;
 import LinkedList.LinkedList;
+import Stack.Stack;
 
 public class Main {
   public static void main(String[] args) {
     System.out.println("hello world");
     // linkedlist();
-    doublyLinkedList();
+    //doublyLinkedList();
+    stack();
+  }
+
+  public static void stack() {
+    Stack myStack = new Stack(4);
+
+    myStack.push(5);
+    myStack.push(65);
+
+    
+    myStack.getHeight();
+    myStack.printTop();
+    myStack.printStack();
+
+    System.out.println("popped: " + myStack.pop().value);
   }
 
   public static void doublyLinkedList() {
